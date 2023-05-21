@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.submit-form {
+  max-width: 300px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.edit-form {
+  max-width: 300px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fullpageContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.loginFields,.blogFields {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.blogsContainer{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
+
+.blogItem {
+  width: 200px;
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: rgb(237, 237, 237);
+}
+
+.blogContainer {
+  display: flex;
+  flex-wrap:wrap;
+  border: 1px solid grey;
+  border-radius: 10px;
+  min-height: 300px;
+  background-color: rgb(237, 237, 237);;
+}
+
+.blogInfo {
+  width:30%;
+  padding: 10px;
+  border-right: 1px solid grey;
+  font-size: 35px;
+  position: relative;
+}
+.blogDesc {
+  padding: 10px;
+}
+
+.authorName {
+position: absolute;
+bottom: 0px;
+font-style: italic;
+font-size: 16px;
+}
+.status {
+  text-align: right;
+}
+.editContainer {
+  text-align: right;
+}
+.selectedBlog {
+  margin-top: 50px;
+}
+.selectedBlog h2 {
+  margin-bottom: 0px;
+}
+.addButtonContainer {
+  display: flex;
+  justify-content: end;
+}
+textarea {
+  width: 350px;
+  height:200px;
+}
+
+.loginForm {
+  width: 300px;
+    height: 500px;
+}
+
+.blogTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+
+  .multiline-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; /* start showing ellipsis when 3rd line is reached */
+    white-space: pre-wrap; /* let the text wrap preserving spaces */
+  }
